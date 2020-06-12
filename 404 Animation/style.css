@@ -1,0 +1,302 @@
+body {
+    position: relative;
+}
+
+.first-four {
+    width: 200px;
+    height: 25px;
+    background-color: black;
+    border-radius: 20px;
+    position: absolute;
+    top: 300px;
+    left: 130px;
+    animation-name: first-four;
+    animation-duration: 3s;
+}
+
+@keyframes first-four {
+    0% {
+        left: 0px;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+}
+
+.first-four::after {
+    content: " ";
+    width: 200px;
+    height: 25px;
+    background-color: black;
+    border-radius: 20px;
+    position: absolute;
+    left: -25px;
+    top: -68px;
+    transform: rotate(-45deg);
+    animation-name: after-first;
+    animation-duration: 3s;
+}
+
+@keyframes after-first {
+    0% {
+        top: -600px;
+    }
+}
+
+.first-four::before {
+    content: " ";
+    width: 200px;
+    height: 25px;
+    background-color: black;
+    border-radius: 20px;
+    position: absolute;
+    left: 38px;
+    top: -40px;
+    transform: rotate(90deg);
+    animation-name: before-four;
+    animation-duration: 3s;
+}
+
+@keyframes before-four {
+    0% {
+        top: 600px;
+    }
+}
+
+
+/*Second four*/
+
+.second-four {
+    width: 200px;
+    height: 25px;
+    background-color: black;
+    border-radius: 20px;
+    position: absolute;
+    top: 300px;
+    left: 540px;
+    animation-name: first-four;
+    animation-duration: 3s;
+}
+
+@keyframes first-four {
+    0% {
+        left: 0px;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+}
+
+.second-four::after {
+    content: " ";
+    width: 200px;
+    height: 25px;
+    background-color: black;
+    border-radius: 20px;
+    position: absolute;
+    left: -25px;
+    top: -68px;
+    transform: rotate(-45deg);
+    animation-name: after-first;
+    animation-duration: 3s;
+}
+
+@keyframes after-first {
+    0% {
+        top: -600px;
+    }
+}
+
+.second-four::before {
+    content: " ";
+    width: 200px;
+    height: 25px;
+    background-color: black;
+    border-radius: 20px;
+    position: absolute;
+    left: 38px;
+    top: -40px;
+    transform: rotate(90deg);
+    animation-name: before-four;
+    animation-duration: 3s;
+}
+
+@keyframes before-four {
+    0% {
+        top: 600px;
+    }
+}
+
+.circle {
+    width: 170px;
+    height: 200px;
+    background-color: gray;
+    border-radius: 50%;
+    position: absolute;
+    left: 350px;
+    top: 165px;
+    animation-name: increase;
+    animation-duration: 3s;
+}
+
+@keyframes increase {
+    0% {
+        width: 0px;
+        height: 0px;
+    }
+}
+
+.circle::before {
+    content: "";
+    width: 170px;
+    height: 100px;
+    background-color: transparent;
+    border-radius: 300px 300px 0px 0px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    animation-name: clip;
+    animation-duration: 7s;
+    animation-fill-mode: forwards;
+    animation-delay: 4s;
+}
+
+@keyframes clip {
+    0% {
+        background-color: white;
+        clip-path: polygon(53% 85%, 73% 72%, 85% 87%, 100% 74%, 100% 100%, 50% 100%, 0 100%, 0 75%, 21% 90%, 38% 67%);
+    }
+    100% {
+        background-color: white;
+    }
+}
+
+.alphabets {
+    display: inline-block;
+}
+
+.f,
+.i,
+.l,
+.e,
+.n,
+.o,
+.T,
+.F,
+.O,
+.u,
+.N,
+.d {
+    position: absolute;
+    top: 50px;
+    color: transparent;
+    font-size: 80px;
+    animation-name: letter;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+.f {
+    /*position:absolute;
+    top:50px;
+    color:white;*/
+    left: 80px;
+    /*font-size:80px;
+    animation-name:letter;
+    animation-duration:3s;
+    animation-fill-mode:forwards;*/
+    animation-delay: 7s;
+}
+
+.i {
+    /* position:absolute;
+    top:50px;
+    color:white*/
+    left: 135px;
+    /*font-size:80px;
+    animation-name:letter;
+    animation-duration:3s;
+    animation-fill-mode:forwards;*/
+    animation-delay: 8s;
+}
+
+.l {
+    /*position:absolute;
+    top:50px;
+    color:white;
+    font-size:80px;
+    animation-name:letter;
+    animation-duration:3s;
+    animation-fill-mode:forwards;*/
+    animation-delay: 9s;
+    left: 165px;
+}
+
+.e {
+    /*position:absolute;
+    top:50px;
+    color:white;
+
+    font-size:80px;
+    animation-name:letter;
+    animation-duration:3s;
+    animation-fill-mode:forwards;*/
+    animation-delay: 10s;
+    left: 220px;
+}
+
+.n {
+    animation-delay: 11s;
+    left: 340px;
+}
+
+.o {
+    animation-delay: 12s;
+    left: 400px;
+}
+
+.T {
+    animation-delay: 13s;
+    left: 460px;
+}
+
+.F {
+    animation-delay: 14s;
+    left: 560px;
+}
+
+.O {
+    animation-delay: 15s;
+    left: 610px;
+}
+
+.u {
+    animation-delay: 16s;
+    left: 670px;
+}
+
+.N {
+    animation-delay: 17s;
+    left: 735px;
+}
+
+.d {
+    animation-delay: 18s;
+    left: 800px;
+}
+
+@keyframes letter {
+    0% {
+        font-size: 0px;
+        top: 300px;
+        left: 400px;
+    }
+    50% {
+        color: black;
+        font-size: 60px;
+        top: 50px;
+    }
+    100% {
+        color: black;
+    }
+}
