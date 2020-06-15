@@ -9,13 +9,12 @@ body {
 }
 
 .layering,
-.neumorphism {
+.neumorphism,
+.expand {
     display: flex;
     height: 20vh;
     align-items: flex-end;
     justify-content: center;
-    /*  background-color: #1b141a; */
-    /* border: 1px solid red; */
 }
 
 .layering ul {
@@ -267,4 +266,126 @@ body {
 .neumorphism ul li a .fab {
     color: #000;
     opacity: 0.5;
+}
+
+.expand {
+    align-items: center;
+}
+
+.expand div {
+    width: 3rem;
+    height: 3rem;
+    position: relative;
+    border-radius: 50%;
+    margin: 0 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.expand i {
+    font-size: 2rem;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    right: 8px;
+    bottom: 8px;
+}
+
+.expand p {
+    opacity: 0;
+}
+
+.expand div:nth-child(1):hover {
+    width: 8rem;
+    border-radius: 50px;
+    transition: 0.2s linear;
+    background-color: #3b5998;
+}
+
+.expand div:nth-child(2):hover {
+    width: 8rem;
+    border-radius: 50px;
+    transition: 0.2s linear;
+    background-color: #25d366;
+}
+
+.expand div:nth-child(3):hover {
+    width: 8rem;
+    border-radius: 50px;
+    transition: 0.2s linear;
+    background-color: #00acee;
+}
+
+.expand div:nth-child(4):hover {
+    width: 8rem;
+    border-radius: 50px;
+    transition: 0.2s linear;
+    background-color: #000;
+}
+
+.expand div:nth-child(5):hover {
+    width: 8rem;
+    border-radius: 50px;
+    transition: 0.2s linear;
+    background-color: #ce0606;
+}
+
+.expand:hover div {
+    animation: none
+}
+
+.expand div:hover p {
+    opacity: 1;
+    transition: transform 0.2s;
+    text-align: center;
+    transform: translateX(20px);
+    color: #fff;
+}
+
+.expand div:hover i {
+    transition: transform 1s ease-in-out;
+    transform: rotate(-360deg);
+    width: max-content;
+}
+
+.expand .fa-facebook-f {
+    color: #3b5998;
+}
+
+.expand div:hover .fa-facebook-f {
+    color: #fff;
+}
+
+.expand .fa-whatsapp {
+    color: #25d366;
+}
+
+.expand div:hover .fa-whatsapp {
+    color: #fff;
+}
+
+.expand .fa-twitter {
+    color: #00acee;
+}
+
+.expand div:hover .fa-twitter {
+    color: #fff;
+}
+
+.expand div:hover .fa-github {
+    color: #fff;
+}
+
+.expand .fa-youtube {
+    color: #ce0606;
+}
+
+.expand div:hover .fa-youtube {
+    color: #fff;
+}
+
+.expand .fa-github {
+    color: #000;
 }
