@@ -333,7 +333,7 @@ body {
 }
 
 .expand:hover div {
-    animation: none
+    animation: none;
 }
 
 .expand div:hover p {
