@@ -553,65 +553,81 @@ body {
 }
 
 .isometric ul li a .fab {
+    color: #000;
+}
+
+.isometric ul li:nth-child(1):hover a .fab {
     color: #fff;
 }
 
-.isometric ul li:nth-child(1) a {
+.isometric ul li:nth-child(1):hover a {
     background: #3b5598;
 }
 
-.isometric ul li:nth-child(1) a:before {
+.isometric ul li:nth-child(1):hover a:before {
     background: #1d3060;
 }
 
-.isometric ul li:nth-child(1) a:after {
+.isometric ul li:nth-child(1):hover a:after {
     background: #405ca5;
 }
 
-.isometric ul li:nth-child(2) a {
+.isometric ul li:nth-child(2):hover a .fab {
+    color: #fff;
+}
+
+.isometric ul li:nth-child(2):hover a {
     background: #25d366;
 }
 
-.isometric ul li:nth-child(2) a:before {
+.isometric ul li:nth-child(2):hover a:before {
     background: #209d4f;
 }
 
-.isometric ul li:nth-child(2) a:after {
+.isometric ul li:nth-child(2):hover a:after {
     background: #3db76a;
 }
 
-.isometric ul li:nth-child(3) a {
+.isometric ul li:nth-child(3):hover a .fab {
+    color: #fff;
+}
+
+.isometric ul li:nth-child(3):hover a {
     background: #ce0606;
 }
 
-.isometric ul li:nth-child(3) a:before {
+.isometric ul li:nth-child(3):hover a:before {
     background: #9b0f0f;
 }
 
-.isometric ul li:nth-child(3) a:after {
+.isometric ul li:nth-child(3):hover a:after {
     background: #c61818;
 }
 
-.isometric ul li:nth-child(4) a {
+.isometric ul li:nth-child(4):hover a {
     background: gray;
 }
 
-.isometric ul li:nth-child(4) a:before {
+.isometric ul li:nth-child(4):hover a:before {
     background: #5b5a5a;
 }
 
-.isometric ul li:nth-child(4) a:after {
+.isometric ul li:nth-child(4):hover a:after {
     background: #8a8989;
 }
 
-.isometric ul li:nth-child(5) a {
+.isometric ul li:nth-child(5):hover a .fab {
+    color: #fff;
+}
+
+.isometric ul li:nth-child(5):hover a {
     background: #00acee;
 }
 
-.isometric ul li:nth-child(5) a:before {
+.isometric ul li:nth-child(5):hover a:before {
     background: #0384cc;
 }
 
-.isometric ul li:nth-child(5) a:after {
+.isometric ul li:nth-child(5):hover a:after {
     background: #06b7fb;
 }
