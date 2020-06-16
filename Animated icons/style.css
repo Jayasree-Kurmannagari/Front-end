@@ -11,7 +11,8 @@ body {
 .layering,
 .neumorphism,
 .expand,
-.liquid-effect {
+.liquid-effect,
+.isometric {
     display: flex;
     height: 20vh;
     align-items: flex-end;
@@ -484,4 +485,137 @@ body {
 .liquid-effect a:hover .liquid:after {
     top: -30px;
     opacity: 0;
+}
+
+.isometric {
+    align-items: first baseline;
+}
+
+.isometric ul {
+    display: flex;
+}
+
+.isometric ul li {
+    list-style: none;
+    margin: 0 30px;
+}
+
+.isometric ul li a {
+    background: #fff;
+    position: relative;
+    width: 7vmin;
+    height: 7vmin;
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transform: perspective(1000px) rotate(-30deg) skew(25deg);
+    transition: 0.5s;
+    box-shadow: -20px 20px 10px rgba(0, 0, 0, 0.5);
+}
+
+.isometric ul li a .fab {
+    font-size: 1.5rem;
+    color: #000;
+    transition: 0.5s;
+}
+
+.isometric ul li a .fa-github {
+    color: #fff;
+}
+
+.isometric ul li a:before,
+.isometric ul li a:after {
+    content: "";
+    position: absolute;
+}
+
+.isometric ul li a:before {
+    top: 5px;
+    left: -10px;
+    height: 100%;
+    width: 10px;
+    background: #b1b1b1;
+    transition: 0.5s;
+    transform: skewY(-45deg)
+}
+
+.isometric ul li a:after {
+    bottom: -10px;
+    left: -6px;
+    height: 10px;
+    width: 100%;
+    background: #b1b1b1;
+    transition: 0.5s;
+    transform: skewX(-45deg)
+}
+
+.isometric ul li a:hover {
+    transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(20px, -20px);
+    box-shadow: -50px 50px 20px rgba(0, 0, 0, 0.5)
+}
+
+.isometric ul li a .fab {
+    color: #fff;
+}
+
+.isometric ul li:nth-child(1) a {
+    background: #3b5598;
+}
+
+.isometric ul li:nth-child(1) a:before {
+    background: #1d3060;
+}
+
+.isometric ul li:nth-child(1) a:after {
+    background: #405ca5;
+}
+
+.isometric ul li:nth-child(2) a {
+    background: #25d366;
+}
+
+.isometric ul li:nth-child(2) a:before {
+    background: #209d4f;
+}
+
+.isometric ul li:nth-child(2) a:after {
+    background: #3db76a;
+}
+
+.isometric ul li:nth-child(3) a {
+    background: #ce0606;
+}
+
+.isometric ul li:nth-child(3) a:before {
+    background: #9b0f0f;
+}
+
+.isometric ul li:nth-child(3) a:after {
+    background: #c61818;
+}
+
+.isometric ul li:nth-child(4) a {
+    background: gray;
+}
+
+.isometric ul li:nth-child(4) a:before {
+    background: #5b5a5a;
+}
+
+.isometric ul li:nth-child(4) a:after {
+    background: #8a8989;
+}
+
+.isometric ul li:nth-child(5) a {
+    background: #00acee;
+}
+
+.isometric ul li:nth-child(5) a:before {
+    background: #0384cc;
+}
+
+.isometric ul li:nth-child(5) a:after {
+    background: #06b7fb;
 }
