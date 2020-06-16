@@ -521,10 +521,6 @@ body {
     transition: 0.5s;
 }
 
-.isometric ul li a .fa-github {
-    color: #fff;
-}
-
 .isometric ul li a:before,
 .isometric ul li a:after {
     content: "";
