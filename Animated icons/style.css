@@ -5,12 +5,13 @@
 }
 
 body {
-    background-color: #f5f5f5;
+    background-color: rgb(245, 245, 245);
 }
 
 .layering,
 .neumorphism,
-.expand {
+.expand,
+.liquid-effect {
     display: flex;
     height: 20vh;
     align-items: flex-end;
@@ -298,14 +299,14 @@ body {
 }
 
 .expand div:nth-child(1):hover {
-    width: 8rem;
+    width: 10rem;
     border-radius: 50px;
     transition: 0.2s linear;
     background-color: #3b5998;
 }
 
 .expand div:nth-child(2):hover {
-    width: 8rem;
+    width: 10rem;
     border-radius: 50px;
     transition: 0.2s linear;
     background-color: #25d366;
@@ -342,6 +343,7 @@ body {
     text-align: center;
     transform: translateX(20px);
     color: #fff;
+    font-weight: 600;
 }
 
 .expand div:hover i {
@@ -388,4 +390,98 @@ body {
 
 .expand .fa-github {
     color: #000;
+}
+
+.liquid-effect {
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.liquid-effect a {
+    position: relative;
+    display: block;
+    width: 8vmin;
+    margin: 0 20px;
+}
+
+.liquid-effect .fab {
+    position: absolute;
+    color: #000;
+    font-size: 1.75rem;
+    width: 8vmin;
+    z-index: 1;
+    text-align: center;
+}
+
+.liquid-effect a:hover .fab {
+    color: #fff;
+}
+
+.liquid-effect a:hover .fa-github {
+    color: #000;
+}
+
+.liquid-effect a .liquid {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 8vmin;
+    height: 10vmin;
+    background: #3b5998;
+    transition: 0.5s;
+}
+
+.liquid-effect a:nth-child(2) .liquid {
+    background: #25d366;
+}
+
+.liquid-effect a:nth-child(3) .liquid {
+    background: #ce0606;
+}
+
+.liquid-effect a:nth-child(4) .liquid {
+    background: gray;
+}
+
+.liquid-effect a:nth-child(5) .liquid {
+    background: #00acee;
+}
+
+.liquid-effect a .liquid:before,
+.liquid-effect a .liquid:after {
+    content: "";
+    position: absolute;
+    width: 150%;
+    height: 100%;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%, -75%);
+    background: #000;
+}
+
+.liquid-effect a .liquid:before {
+    border-radius: 45%;
+    background: rgba(245, 245, 245, 1);
+    animation: animate 5s linear infinite;
+}
+
+.liquid-effect a .liquid:after {
+    border-radius: 40%;
+    background: rgba(245, 245, 245, 0.5);
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: translate(-50%, -75%) rotate(0deg)
+    }
+    100% {
+        transform: translate(-50%, -75%) rotate(360deg)
+    }
+}
+
+.liquid-effect a:hover .liquid:before,
+.liquid-effect a:hover .liquid:after {
+    top: -30px;
+    opacity: 0;
 }
