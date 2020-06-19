@@ -1,43 +1,46 @@
-body{
-  min-height:100vh;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  background:#ccc;
+body {
+    max-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ccc;
 }
-div{
-  position:relative;
-  width:500px;
-  height:550px;
-  border-left:30px groove #fff;
-  border-right:30px groove #fff;
-  border-bottom:15px groove #fff;
-  border-top:20px groove #fff;
-  background:linear-gradient(-70deg, #98cce1 30%,#b3deef 30% 40%,#98cce1 40% 45%,#b3deef 45% 70%,#98cce1 70%);
-    box-shadow:inset 10px 10px 0 5px #ccc,inset -10px 0 0 5px #ccc,
-      inset 12px 12px 0 8px #494b4a,
-      inset -12px 12px 0 8px #494b4a;
+
+div {
+    position: relative;
+    width: 90vmin;
+    height: 90vmin;
+    border-left: 3vmin groove #fff;
+    border-right: 3vmin groove #fff;
+    border-bottom: 2vmin groove #fff;
+    border-top: 2vmin groove #fff;
+    background: linear-gradient(-70deg, #98cce1 30%, #b3deef 30% 40%, #98cce1 40% 45%, #b3deef 45% 70%, #98cce1 70%);
+    box-shadow: inset 1.25vmin 1.25vmin 0 0.25vmin #ccc, inset -1.25vmin 0 0 0.25vmin #ccc, inset 2.25vmin 2.25vmin 0 0.15vmin #494b4a, inset -2.25vmin 2.25vmin 0 0.15vmin #494b4a;
+    z-index: 10000;
 }
-div:after{
-  content:"";
-  width:465px;
-  height:400px;
-  position:absolute;
-  top:20%;
-  left:4%;
-  border-top:20px solid #fff;
-  border-bottom:12px solid #fff;
-  box-shadow:inset 0px -3px 0 0px gray, 0px -3px 0 0 gray,inset 0px 3px 0 0 #494b4a;
+
+div:after {
+    content: "";
+    width: 85vmin;
+    overflow: hidden;
+    height: 65vmin;
+    position: absolute;
+    top: 20%;
+    left: 3%;
+    border-top: 5vmin solid #fff;
+    border-bottom: 2vmin solid #fff;
+    box-shadow: inset 0em -0.15em 0 0 gray, 0 -0.15em 0 0 gray, inset 0 0.15em 10px 0 #494b4a, 0 0 10px 0;
 }
-div:before{
-  content:"";
-  width:150px;
-  height:530px;
-  position:absolute;
-  top:3%;
-  left:30%;
-  border-left:20px solid #fff;
-  border-right:20px solid #fff;
-  z-index:100;
-  box-shadow:inset 3px 0px 0 0px #494b4a,3px 0px 0 0 #494b4a, -3px 0 0 0 gray,inset -3px 0 0 gray,10px 10px 5px 0 #ccc,-10px 10px 5px 0 #ccc;
+
+div:before {
+    content: "";
+    width: 25vmin;
+    height: 88vmin;
+    position: absolute;
+    top: 3%;
+    left: 30%;
+    border-left: 3vmin solid #fff;
+    border-right: 3vmin solid #fff;
+    z-index: 100;
+    box-shadow: inset 3px 0px 10px 0px #494b4a, 3px 0px 10px 0 #494b4a, -3px 0 10px 0 gray, inset -3px 0 10px gray;
 }
