@@ -1,0 +1,117 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: #352020;
+            min-height: 100vh;
+        }
+        
+        .result {
+            display: flex;
+            justify-content: center;
+            width: 100vw;
+            align-items: center;
+            height: 40vh;
+        }
+        
+        textarea {
+            background-color: #352020;
+            box-shadow: inset 26px 26px 52px #1e1212, inset -26px -26px 52px #4c2e2e;
+            border: none;
+            resize: none;
+            width: 60vw;
+            height: 20vh;
+            font-size: 20px;
+            color: #ccc;
+            font-family: 'Balsamiq Sans', cursive;
+            text-align: center;
+        }
+        
+        .keyboard {
+            width: 90vw;
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            margin: 0 auto;
+            padding: 5vmin;
+            border-radius: 50px;
+            box-shadow: -2vmin 2vmin 1vmin #1e1212, 2vmin -1vmin 1vmin #4c2e2e;
+            ;
+        }
+        
+        .letters {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .key {
+            margin: 1vmin;
+            padding: 1vmin 2vmin;
+            border-radius: 1vmin;
+            box-shadow: 0.75vmin 0.75vmin 0.8vmin #1e1212, -0.75vmin -0.75vmin 1vmin #4c2e2e;
+            cursor: pointer;
+        }
+        
+        span {
+            width: auto;
+            display: inline-block;
+        }
+        
+        .key:active {
+            box-shadow: inset 0.75vmin 0.75vmin 0.8vmin #1e1212, inset -0.75vmin -0.75vmin 1vmin #4c2e2e;
+        }
+        
+        .key:active span {
+            transform: scale(0.98);
+        }
+        
+        .row2 .key {
+            padding: 1vmin 2.87vmin;
+            margin: 1.5vmin;
+        }
+        
+        .row3 .key {
+            margin: 1vmin 1.65vmin;
+            padding: 1.25vmin 3vmin;
+        }
+        
+        .row4 .key {
+            margin: 1vmin 1.65vmin;
+            padding: 1.25vmin 2.95vmin;
+        }
+        
+        .row5 .key {
+            margin: 1vmin 1.65vmin;
+            padding: 1.25vmin 3.1vmin;
+        }
+        
+        .row6 .key {
+            margin: 1vmin 1.65vmin;
+            padding: 1vmin 3.1vmin;
+        }
+        
+        .tab {
+            padding: 1vmin 3vmin !important;
+        }
+        
+        .shift {
+            padding: 1vmin 7.25vmin !important;
+        }
+        
+        .spacebar {
+            padding: 1vmin 25vmin !important;
+        }
+        
+        .arrow {
+            padding: 0 2.8vmin !important;
+            margin: 0 0 !important;
+        }
+        
+        span,
+        p {
+            color: #ccc;
+        }

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="result">
+        <label for="text"></label>
+        <textarea name="result" id="text" class="textbox"></textarea>
+    </div>
+    <div class="keyboard">
+        <div class="row1">
+            <div class="letters">
+                <div class="key"><span>esc</span></div>
+                <div class="key"><span>f1</span></div>
+                <div class="key"><span>f2</span></div>
+                <div class="key"><span>f3</span></div>
+                <div class="key"><span>f4</span></div>
+                <div class="key"><span>f5</span></div>
+                <div class="key"><span>f6</span></div>
+                <div class="key"><span>f7</span></div>
+                <div class="key"><span>f8</span></div>
+                <div class="key"><span>f9</span></div>
+                <div class="key"><span>f10</span></div>
+                <div class="key"><span>f11</span></div>
+                <div class="key"><span>f12</span></div>
+                <div class="key"><span>scroll</span></div>
+                <div class="key"><span>pause</span></div>
+                <div class="key"><span>insert</span></div>
+                <div class="key"><span>delete</span></div>
+            </div>
+            <div class="row2">
+                <div class="letters">
+                    <div class="key"><span>~</span></div>
+                    <div class="key"><span>1</span></div>
+                    <div class="key"><span>2</span></div>
+                    <div class="key"><span>3</span></div>
+                    <div class="key"><span>4</span></div>
+                    <div class="key"><span>5</span></div>
+                    <div class="key"><span>6</span></div>
+                    <div class="key"><span>7</span></div>
+                    <div class="key"><span>8</span></div>
+                    <div class="key"><span>9</span></div>
+                    <div class="key"><span>0</span></div>
+                    <div class="key"><span>-</span></div>
+                    <div class="key"><span>=</span></div>
+                    <div class="key" onclick="erase()"><span>backspace</span></div>
+                    <div class="key"><span>home</span></div>
+                </div>
+            </div>
+            <div class="row3">
+                <div class="letters">
+                    <div class="key tab"><span>tab</span></div>
+                    <div class="key"><span>Q</span></div>
+                    <div class="key" onclick="W()"><span>W</span></div>
+                    <div class="key" onclick="E()"><span>E</span></div>
+                    <div class="key" onclick="R()"><span>R</span></div>
+                    <div class="key"><span>T</span></div>
+                    <div class="key"><span>Y</span></div>
+                    <div class="key"><span>U</span></div>
+                    <div class="key"><span>I</span></div>
+                    <div class="key" onclick="O()"><span>O</span></div>
+                    <div class="key"><span>P</Epan></div>
+                    <div class="key"><span>[</span></div>
+                    <div class="key"><span>]</span></div>
+                    <div class="key"><span>\</span></div>
+                    <div class="key"><span>pg up</span></div>
+                </div>
+            </div>
+            <div class="row4">
+                <div class="letters">
+                    <div class="key"><span>caps lock</span></div>
+                    <div class="key"><span>A</span></div>
+                    <div class="key"><span>S</span></div>
+                    <div class="key" onclick="D()"><span>D</span></div>
+                    <div class="key"><span>F</Epan></div>
+                    <div class="key"><span>G</span></div>
+                    <div class="key" onclick="H()"><span>H</span></div>
+                    <div class="key"><span>J</Epan></div>
+                    <div class="key"><span>K</span></div>
+                    <div class="key" onclick="L()"><span>L</span></div>
+                    <div class="key"><span>;</Epan></div>
+                    <div class="key"><span>'</span></div>
+                    <div class="key"><span>enter</span></div>
+                    <div class="key"><span>pg dn</span></div>
+
+                </div>
+            </div>
+            <div class="row5">
+                <div class="letters">
+                    <div class="key shift"><span>shift</span></div>
+                    <div class="key"><span>Z</span></div>
+                    <div class="key"><span>X</span></div>
+                    <div class="key"><span>C</span></div>
+                    <div class="key"><span>V</span></div>
+                    <div class="key"><span>B</span></div>
+                    <div class="key"><span>N</span></div>
+                    <div class="key"><span>M</span></div>
+                    <div class="key"><span>,</span></div>
+                    <div class="key"><span>.</span></div>
+                    <div class="key"><span>/</span></div>
+                    <div class="key shift"><span>shift</span></div>
+                    <div class="key"><span>end</span></div>
+
+                </div>
+            </div>
+            <div class="row6">
+                <div class="letters">
+                    <div class="key"><span>ctrl</span></div>
+                    <div class="key"><span>fn</span></div>
+                    <div class="key"><span><i class="fab fa-windows"></i></span></div>
+                    <div class="key"><span>alt</span></div>
+                    <div class="key spacebar" onclick="space()"><span></span></div>
+                    <div class="key"><span>alt</span></div>
+                    <div class="key"><span><i class="fas fa-bars"></i></span></div>
+                    <div class="key"><span>ctrl</span></div>
+                    <div class="key"><span><i class="fas fa-chevron-left"></i></span></div>
+                    <div class="key arrow">
+
+                        <p><i class="fas fa-chevron-up"></i></p>
+
+                        <p><i class="fas fa-chevron-down"></i></p>
+                    </div>
+                    <div class="key"><span><i class="fas fa-chevron-right"></i></span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/bad7f7f5d4.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
