@@ -1,0 +1,398 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.upper {
+    width: 150px;
+    height: 60px;
+    position: absolute;
+    background: skyblue;
+    z-index: 1;
+    top: 40px;
+    left: 60px;
+    border-radius: 50px;
+}
+
+.stand {
+    width: 150px;
+    height: 120px;
+    background: skyblue;
+    position: relative;
+}
+
+.stand:before {
+    position: absolute;
+    content: "";
+    bottom: -10px;
+    width: 150px;
+    height: 10px;
+    background: skyblue;
+    left: 0px;
+    border-radius: 0 10px 10px 10px;
+}
+
+.stand:after {
+    position: absolute;
+    content: "";
+    width: 150px;
+    height: 120px;
+    right: -20%;
+    background: white;
+    border-radius: 0px 0px 0px 50px;
+}
+
+.bottom {
+    width: 175px;
+    height: 15px;
+    background: #5071d9;
+    position: absolute;
+    top: 220px;
+    border-radius: 20px;
+}
+
+.circle {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: #6687e7;
+    border: 3px solid #5071d9;
+    box-shadow: 0 0 0 4px #6687e7;
+    top: 15px;
+    left: 20px;
+    border-radius: 50%;
+}
+
+.verticle {
+    position: absolute;
+    width: 50px;
+    height: 80px;
+    background: skyblue;
+    right: 0px;
+    border-radius: 50px 50px 40px 40px;
+}
+
+.verticle:before {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 20px;
+    z-index: -100;
+    background: #5071d9;
+    bottom: -10px;
+    left: 10px;
+    border-radius: 0 0 7px 7px;
+}
+
+.screw {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #5071d9;
+    bottom: -20px;
+    left: 20px;
+}
+
+.screw:before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 10px;
+    background: #5071d9;
+    top: 10px;
+    left: -5px;
+    border-radius: 50px;
+}
+
+.rotating {
+    position: absolute;
+    width: 50px;
+    height: 55px;
+    top: 148px;
+    left: 160px;
+    border-radius: 50%;
+    border: 3px solid #5071d9;
+}
+
+@keyframes rotate {
+    100% {
+        transition: transform 0.2s ease;
+        transform: rotateY(360deg);
+    }
+}
+
+.rotating:before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 45px;
+    top: -1px;
+    left: 10px;
+    border: 3px solid #5071d9;
+    border-radius: 50%;
+}
+
+.cup {
+    position: absolute;
+    width: 90px;
+    height: 40px;
+    background: rgba(135, 206, 250, 0.4);
+    top: 170px;
+    left: 140px;
+    border-radius: 0px 0px 50px 50px;
+}
+
+.cup:after {
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 5px;
+    top: -9px;
+    left: -7px;
+    border-radius: 50px;
+    border: 2px solid skyblue;
+}
+
+.face,
+.face1 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right: 20px;
+    top: 5px;
+    display: block;
+}
+
+.face1 {
+    display: none;
+}
+
+.eyes {
+    position: absolute;
+    width: 50px;
+    top: 10px;
+    height: 15px;
+    animation: eyes 1s infinite;
+}
+
+.eyes1 {
+    position: absolute;
+    width: 50px;
+    top: 10px;
+    height: 15px;
+}
+
+@keyframes eyes {
+    0%,
+    100% {
+        transform: scale(1, .05);
+    }
+    5%,
+    95% {
+        transform: scale(1, 1);
+    }
+}
+
+.right-eye,
+.left-eye {
+    position: absolute;
+    width: 10px;
+    height: 15px;
+    left: 7px;
+    background: black;
+    border-radius: 50%;
+}
+
+.left-eye {
+    left: 33px;
+}
+
+.right-eye1,
+.left-eye1 {
+    position: absolute;
+    height: 10px;
+    left: 7px;
+}
+
+.left-eye1 {
+    left: 30px;
+}
+
+.right-eye:before,
+.left-eye:before,
+.right-eye1::before,
+.left-eye1::before {
+    position: absolute;
+    content: "";
+    top: -4px;
+    left: -3px;
+    width: 15px;
+    height: 10px;
+    border-radius: 50%;
+    box-shadow: 0px -3px 0 -1px #6687e7;
+}
+
+.right-eye1:after,
+.left-eye1:after {
+    position: absolute;
+    content: ">";
+    height: 7px;
+    top: -3px;
+    left: 0;
+    transform: rotate(0deg);
+}
+
+.left-eye1:after {
+    content: "<";
+}
+
+.nose,
+.nose1 {
+    position: absolute;
+    width: 10px;
+    height: 7px;
+    background: #6687e7;
+    top: 25px;
+    left: 20px;
+    border-radius: 50px;
+}
+
+.nose1 {
+    top: 22px;
+}
+
+.mouth {
+    position: absolute;
+    width: 30px;
+    height: 13px;
+    background: #cb2a48;
+    top: 35px;
+    left: 10px;
+    overflow: hidden;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.mouth:before {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 10px;
+    left: 7px;
+    top: 7px;
+    border-radius: 5px;
+    background: #e24269;
+}
+
+.mouth1 {
+    position: absolute;
+    width: 40px;
+    height: 15px;
+    top: 23px;
+    left: 5px;
+    border-bottom: 2px solid black;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.mouth1:before {
+    position: absolute;
+    width: 10px;
+    height: 12px;
+    background: #cb2a48;
+    content: "";
+    right: -2px;
+    top: 10px;
+    transform: rotate(-15deg) skew(10deg);
+    border-radius: 0px 0px 10px 10px;
+}
+
+.btn {
+    position: absolute;
+    bottom: 15px;
+    padding: 5px 20px;
+    cursor: pointer;
+    border-radius: 50px;
+    border: 2px solid #5071d9;
+    background: linear-gradient(135deg, #5071d9 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+    z-index: 1;
+}
+
+.btn:hover {
+    background-position: left bottom;
+    color: #fff;
+}
+
+.btn:hover~.rotating {
+    animation: rotate 0.4s forwards infinite;
+}
+
+.btn:hover~.rotating:before {
+    animation: rotate-inner 0.4s forwards infinite;
+}
+
+@keyframes rotate-inner {
+    100% {
+        transition: transform 0.2s ease;
+        transform: rotateY(-180deg);
+    }
+}
+
+.container:hover .face {
+    display: none;
+}
+
+.container:hover .face1 {
+    display: block;
+}
+
+.container:hover .upper {
+    transition: transform 0.2s ease;
+    transform: scale(0.95) translate(4px, 5px);
+}
+
+.container:hover .cup {
+    animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both infinite;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+@keyframes shake {
+    10%,
+    90% {
+        transform: translate3d(-3px, 0, 0);
+    }
+    20%,
+    80% {
+        transform: translate3d(4px, 0, 0);
+    }
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-8px, 0, 0);
+    }
+    40%,
+    60% {
+        transform: translate3d(8px, 0, 0);
+    }
+}
