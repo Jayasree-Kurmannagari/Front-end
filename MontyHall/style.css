@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #A51F1F;
+    min-height: 100vh;
+}
+
+header {
+    height: 20vh;
+    font-family: 'Bangers', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    text-align: center;
+}
+
+@media only screen and (max-width:700px) {
+    header {
+        margin-top: 20px;
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+.instructions {
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-family: 'Metamorphous', cursive;
+    margin-bottom: 20px;
+}
+
+.door-row {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.door {
+    width: 200px;
+    height: 350px;
+    margin: 10px 40px;
+    cursor: pointer;
+    border: 10px solid #000;
+}
+
+.buttons {
+    width: 300px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    padding: 10px 40px;
+    background-color: #000;
+    border: none;
+    border-radius: 50px;
+    color: #A51F1F;
+    cursor: pointer;
+    margin: 0 20px;
+    font-size: 18px;
+    box-shadow: 0px 10px 13px -7px #000000, 7px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+button:active {
+    transform: scale(0.9);
+}
