@@ -11,27 +11,91 @@
 </head>
 
 <body>
-    <header>
-        <h1>welcome to Montyhall game</h1>
-    </header>
-    <div class="instructions">
-        <div id="row1" class="row1">Please Select a door</div>
-        <div id="row2" class="row2">
-            <p>Ok, I'm opening a door</p>
-            <p>Do you want to switch?</p>
-            <div class="buttons">
-                <button>Yes</button>
-                <button>No</button>
+    <div id="body" class="container1">
+        <header>
+            <h1>welcome to Montyhall game</h1>
+        </header>
+        <p class="rule-title">Instructions</p>
+        <table class="rules">
+            <tr class="rule-row">
+                <td class="rule-number">1.</td>
+                <td class="rule">Below, there are 3 doors. Behind one door,there is a car and behind the others,goats</td>
+            </tr>
+            <tr class="rule-row">
+                <td class="rule-number">2.</td>
+                <td class="rule">Your goal is to pick a door behind which there is a car</td>
+            </tr>
+            <tr class="rule-row">
+                <td class="rule-number">3.</td>
+                <td class="rule">When you select a door,the computer reveals another door which has a goat</td>
+            </tr>
+            <tr class="rule-row">
+                <td class="rule-number">4.</td>
+                <td class="rule">Now,You can either switch to another closed door or go with your initial choice</td>
+            </tr>
+            <tr class="rule-row">
+                <td class="rule-number">5.</td>
+                <td class="rule">Play Wisely and win a car</td>
+            </tr>
+        </table>
+        <div id="instructions" class="instructions">
+            <div id="row1" class="row1">Please Select a door</div>
+            <div id="d1">You selected door1</div>
+            <div id="d2">You selected door2</div>
+            <div id="d3">You selected door3</div>
+            <div id="row2" class="row2">
+                <p>Ok, I'm opening a door</p>
+                <p>Do you want to switch?</p>
+                <div class="buttons">
+                    <button id="btn-1">Yes</button>
+                    <button id="btn-2">No</button>
+                </div>
             </div>
         </div>
+
+        <main class="door-row">
+            <img id="door1" class="door" src="./door.png" alt="door">
+            <img id="door2" class="door" src="./door.png" alt="door">
+            <img id="door3" class="door" src="./door.png" alt="door">
+
+        </main>
     </div>
-
-    <main class="door-row">
-        <img id="door1" class="door" src="./door.png" alt="door">
-        <img id="door2" class="door" src="./door.png" alt="door">
-        <img id="door3" class="door" src="./door.png" alt="door">
-
-    </main>
+    <div id="switchAndWin" class="container2">
+        <p>Congratulations!!!!!</p>
+        <p>You made the right choice by switching</p>
+        <p>By switching, you increased your probability of winning to 0.67</p>
+        <div class="links">
+            <a href="https://en.wikipedia.org/wiki/Monty_Hall_problem" target="_blank">Know more</a>
+            <a href="index.html">Play again</a>
+        </div>
+    </div>
+    <div id="switchAndLose" class="container3">
+        <p>You Lost!!!</p>
+        <p>The chances of you winning was 67% since you switched,yet you still lost </p>
+        <p>Play again to redefine your luck</p>
+        <div class="links">
+            <a href="https://en.wikipedia.org/wiki/Monty_Hall_problem" target="_blank">Know more</a>
+            <a href="index.html">Play again</a>
+        </div>
+    </div>
+    <div id="NoSwitchAndWin" class="container4">
+        <p>Congratulations!!!!!</p>
+        <p>You are a very lucky person</p>
+        <p>The probability of you winning was only 0.33 because you didn't switch,yet you still won</p>
+        <div class="links">
+            <a href="https://en.wikipedia.org/wiki/Monty_Hall_problem" target="_blank">Know more</a>
+            <a href="index.html">Play again</a>
+        </div>
+    </div>
+    <div id="NoSwitchAndLose" class="container5">
+        <p>You Lost!!!!</p>
+        <p>Since you didn't switch, your chances of winning was only 33%</p>
+        <p>Play again to redefine your luck</p>
+        <div class="links">
+            <a href="https://en.wikipedia.org/wiki/Monty_Hall_problem" target="_blank">Know more</a>
+            <a href="index.html">Play again</a>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 

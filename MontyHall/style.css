@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=McLaren&display=swap');
 * {
     margin: 0;
     padding: 0%;
@@ -6,8 +7,12 @@
 }
 
 body {
-    background-color: #A51F1F;
+    background-color: gray;
     min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 header {
@@ -28,25 +33,49 @@ header {
     }
 }
 
+.rule-title {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.rules {
+    border-spacing: 0 15px;
+    margin-bottom: 30px;
+}
+
+.rule-number {
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+.rule {
+    font-size: 18px;
+    line-height: 25px;
+    padding-right: 10px;
+}
+
 .instructions {
     height: 15vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 25px;
-    font-family: 'Metamorphous', cursive;
-    margin-bottom: 20px;
+    font-size: 30px;
+    font-family: 'McLaren', cursive;
+    margin: 30px 0;
 }
 
 .door-row {
     text-align: center;
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 .door {
     width: 200px;
     height: 350px;
     margin: 10px 40px;
+    margin-bottom: 40px;
     cursor: pointer;
     border: 10px solid #000;
 }
@@ -64,7 +93,7 @@ button {
     background-color: #000;
     border: none;
     border-radius: 50px;
-    color: #A51F1F;
+    color: gray;
     cursor: pointer;
     margin: 0 20px;
     font-size: 18px;
@@ -73,4 +102,44 @@ button {
 
 button:active {
     transform: scale(0.9);
+}
+
+.container2 p,
+.container3 p,
+.container4 p,
+.container5 p {
+    font-size: 18px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.container2 p:first-child,
+.container3 p:first-child,
+.container4 p:first-child,
+.container5 p:first-child {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.links {
+    width: 100vw;
+    height: 10vw;
+    text-align: center;
+    margin: 40px 0;
+}
+
+.container2 a,
+.container3 a,
+.container4 a,
+.container5 a {
+    color: gray;
+    background-color: #000;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 0 10px;
+    box-shadow: 0px 10px 13px -7px #000000, 7px 5px 15px 5px rgba(0, 0, 0, 0);
 }
