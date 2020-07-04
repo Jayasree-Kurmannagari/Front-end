@@ -39,8 +39,8 @@ doorImage1.onclick = () => {
     document.getElementById('d1').hidden = false;
 
 
-    setTimeout(() => { document.getElementById('d1').hidden = true; }, 2000);
-    setTimeout(() => { document.getElementById('row2').hidden = false; }, 2000)
+    setTimeout(() => { document.getElementById('d1').hidden = true; }, 1000);
+    setTimeout(() => { document.getElementById('row2').hidden = false; }, 1000)
 
     if (openDoor2 === losePath) {
         setTimeout(() => { doorImage2.src = openDoor2; }, 3000);
@@ -89,8 +89,8 @@ doorImage2.onclick = () => {
     document.getElementById('d2').hidden = false;
 
 
-    setTimeout(() => { document.getElementById('d2').hidden = true; }, 2000);
-    setTimeout(() => { document.getElementById('row2').hidden = false; }, 2000)
+    setTimeout(() => { document.getElementById('d2').hidden = true; }, 1000);
+    setTimeout(() => { document.getElementById('row2').hidden = false; }, 1000)
 
     if (openDoor1 === losePath) {
         setTimeout(() => { doorImage1.src = openDoor1; }, 3000);
@@ -139,8 +139,8 @@ doorImage3.onclick = () => {
     document.getElementById('d3').hidden = false;
 
 
-    setTimeout(() => { document.getElementById('d3').hidden = true; }, 2000);
-    setTimeout(() => { document.getElementById('row2').hidden = false; }, 2000)
+    setTimeout(() => { document.getElementById('d3').hidden = true; }, 1000);
+    setTimeout(() => { document.getElementById('row2').hidden = false; }, 1000)
 
     if (openDoor1 === losePath) {
         setTimeout(() => { doorImage1.src = openDoor1; }, 3000);
