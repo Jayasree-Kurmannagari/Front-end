@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-1 {
+    min-height: 100vh;
+    background-color: #000;
+    display: flex;
+    width: 100%;
+}
+
+.img-container {
+    display: flex;
+    align-items: center;
+    width: 40vw;
+    height: 100vh;
+}
+
+.main-img {
+    width: 20em;
+    height: 25em;
+    margin-left: 30%;
+}
+
+.content {
+    width: 60vw;
+    height: 70vh;
+    margin-top: 9em;
+    overflow: hidden;
+    margin-left: 4em;
+}
+
+.start-content {
+    display: flex;
+}
+
+.start {
+    color: #fff;
+    position: relative;
+    left: 23%;
+    font-size: 2em;
+    font-family: 'Libre Baskerville', serif;
+    width: 5em;
+    z-index: 1;
+}
+
+.start:before,
+.start:after {
+    content: "";
+    position: relative;
+    height: 1px;
+    background-color: #fff;
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.start:before {
+    right: 0.5em;
+    margin-left: -100%;
+}
+
+.start:after {
+    left: 0.5em;
+    margin-right: -100%;
+}
+
+.name {
+    margin-top: 2em;
+}
+
+.name p {
+    color: #fff;
+    font-size: 5em;
+    text-transform: uppercase;
+    line-height: 1.25em;
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.7)
+}
+
+@media only screen and (max-width:900px) {
+    .main-img {
+        margin-left: 5%;
+        width: 15em;
+        height: 20em;
+    }
+    .start {
+        font-size: 1.5em;
+    }
+    .name p {
+        font-size: 2em;
+    }
+    .content {
+        margin-top: 12em;
+    }
+    .container-1 {
+        height: 70vh;
+    }
+}
