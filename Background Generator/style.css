@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merienda+One&display=swap');
 * {
     margin: 0;
@@ -6,12 +7,13 @@
 }
 
 body {
-    background: linear-gradient(to right, pink, rgb(10, 134, 156));
+    min-height: 100vh;
+    background: linear-gradient(90deg, #ffc0cb, #0a869c);
 }
 
 h1 {
-    margin: 3em;
-    margin-bottom: 1em;
+    padding: 3em;
+    padding-bottom: 1em;
     text-align: center;
     text-transform: uppercase;
     font-family: 'Merienda One', cursive;
@@ -41,14 +43,20 @@ button {
     display: block;
     margin: 0 auto;
     padding: 0.5em 1.6em;
-    background: #000;
+    background: #ccc;
     border: none;
     border-radius: 50px;
-    color: #ccc;
+    color: #000;
     cursor: pointer;
     box-shadow: 0px 10px 13px -7px #000000, 7px 5px 15px 5px rgba(0, 0, 0, 0);
 }
 
 button:active {
     transform: scale(0.9);
+}
+
+p {
+    padding: 1em;
+    text-align: center;
+    font-family: 'Fira Sans', sans-serif;
 }

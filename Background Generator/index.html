@@ -8,15 +8,17 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body id="gradient">
     <header>
         <h1>Background gradient generator</h1>
     </header>
     <section class="colors">
-        <input type="color" name="color1" value="#D53318">
-        <input type="color" name="color2" value="#1AE552">
+        <input class="angle" type="number" name="angle" value="90" max="360" min="0">
+        <input class="color1" type="color" name="color1" value="#D53318">
+        <input class="color2" type="color" name="color2" value="#1AE552">
     </section>
     <button>Random</button>
+    <p></p>
     <script src="script.js" async defer></script>
 </body>
 
