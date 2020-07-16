@@ -57,6 +57,7 @@ button:active {
 
 p {
     padding: 1em;
+    padding-top: 2em;
     text-align: center;
     font-family: 'Fira Sans', sans-serif;
 }
