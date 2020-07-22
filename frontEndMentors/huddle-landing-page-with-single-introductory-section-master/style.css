@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -8,10 +9,13 @@
 body {
     background-color: hsl(257, 40%, 49%);
     background-image: url('./images/bg-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: center;
     flex-direction: column;
     min-height: 100vh;
+    font-family: 'Open Sans', sans-serif
 }
 
 .logo {
@@ -65,6 +69,8 @@ button {
     font-family: 'Poppins', sans-serif;
     cursor: pointer;
     border: none;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    color: hsl(257, 40%, 49%);
 }
 
 button:hover {
@@ -74,13 +80,17 @@ button:hover {
 footer {
     width: 95%;
     text-align: right;
+    display: block;
 }
 
 i {
     font-size: 1em;
     color: white;
-    padding: 0.75em;
+    padding: 0.5em;
     margin: 0.5em;
+    text-align: center;
+    width: 2em;
+    height: 2em;
     border-radius: 50%;
     border: 1px solid white;
     cursor: pointer;
@@ -93,6 +103,8 @@ i {
     .container {
         flex-direction: column;
         width: 100%;
+        margin: 80px 0;
+        height: auto;
     }
     .img-container {
         width: 100%;
@@ -110,9 +122,5 @@ i {
     footer {
         width: 100%;
         text-align: center;
-        margin-top: 7.5em;
-    }
-    i {
-        font-size: 0.75em;
     }
 }
