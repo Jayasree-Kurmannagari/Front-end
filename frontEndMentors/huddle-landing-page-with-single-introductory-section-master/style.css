@@ -11,6 +11,7 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    min-height: 100vh;
 }
 
 .logo {
@@ -85,7 +86,7 @@ i {
     cursor: pointer;
 }
 
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:768px) {
     body {
         background-image: url('./images/bg-mobile.svg');
     }
