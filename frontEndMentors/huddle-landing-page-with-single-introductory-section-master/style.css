@@ -28,7 +28,7 @@ body {
     width: 90%;
     align-items: center;
     height: auto;
-    margin: 4rem 0;
+    margin-top: 3.75rem;
 }
 
 .img-container {
@@ -50,8 +50,7 @@ body {
 
 h2 {
     color: white;
-    margin: 2em 0;
-    margin-bottom: 0.75em;
+    margin: 1em 2em 0.75em 0;
     font-family: 'Poppins', sans-serif;
     line-height: 1.2em;
     font-size: 2em;
@@ -104,8 +103,7 @@ i {
     .container {
         flex-direction: column;
         width: 100%;
-        margin: 80px 0;
-        height: auto;
+        margin-top: 0;
     }
     .img-container {
         width: 100%;
