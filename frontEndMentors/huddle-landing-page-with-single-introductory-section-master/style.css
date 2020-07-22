@@ -27,7 +27,8 @@ body {
     display: flex;
     width: 90%;
     align-items: center;
-    height: 28em;
+    height: auto;
+    margin: 4rem 0;
 }
 
 .img-container {
