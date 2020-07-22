@@ -20,7 +20,7 @@ body {
 
 .container {
     display: flex;
-    width: 100%;
+    width: 90%;
     align-items: center;
     height: 28em;
 }
@@ -71,8 +71,6 @@ button:hover {
 }
 
 footer {
-    position: absolute;
-    bottom: 2em;
     width: 95%;
     text-align: right;
 }
@@ -93,6 +91,7 @@ i {
     }
     .container {
         flex-direction: column;
+        width: 100%;
     }
     .img-container {
         width: 100%;
@@ -104,10 +103,13 @@ i {
     h2 {
         font-size: 1.5em;
     }
+    p {
+        margin-right: 0;
+    }
     footer {
         width: 100%;
         text-align: center;
-        bottom: 0.2em;
+        margin-top: 7.5em;
     }
     i {
         font-size: 0.75em;

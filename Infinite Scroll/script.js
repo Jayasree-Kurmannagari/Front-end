@@ -1,7 +1,7 @@
 const imageContainer = document.getElementById('imageContainer');
 const APIkey = "WbOHOfRxtRo09B2OluMdF9eN55RKMev_1Rq1yl_gH_4";
 const query = 'Food and Drink'
-const count = 10;
+const count = 30;
 const APIaddr = `https://api.unsplash.com/photos/random/?client_id=${APIkey}&query=${query}&count=${count}`;
 let allPhotos = [];
 const loading = document.getElementById("loading");
