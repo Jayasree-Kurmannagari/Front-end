@@ -1,0 +1,103 @@
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'Open Sans', sans-serif;
+        border: none;
+    }
+    
+    header {
+        display: flex;
+        justify-content: space-between;
+        margin: 2rem;
+        flex-grow: 1;
+    }
+    
+    header img {
+        width: 10em;
+    }
+    
+    .nav-bar {
+        width: 70%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
+    .nav-bar li {
+        list-style: none;
+        padding: 0 1.5em;
+    }
+    
+    .nav-bar a {
+        color: #000;
+        text-decoration: none;
+    }
+    
+    .container1 {
+        display: flex;
+        margin: 3rem 0em 5rem 0em;
+        border: 1px solid red;
+    }
+    
+    .text-container1 {
+        margin: 2em;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .text-container1 h2 {
+        font-family: 'Raleway', sans-serif;
+        font-weight: bolder;
+        margin: 3em 0.5em;
+        margin-bottom: 0em;
+        line-height: 1.5em;
+        text-align: center;
+    }
+    
+    .text-container1 p {
+        margin: 0.75em;
+        text-align: center;
+    }
+    
+    .input-form {
+        display: flex;
+        margin-top: 1em;
+    }
+    
+    .input-form button {
+        margin: 0 1em;
+    }
+    
+    .container1 img {
+        width: 60%;
+    }
+    
+    @media only screen and (max-width:760px) {
+        header img {
+            width: 9em;
+        }
+        header {
+            margin: 2em 0;
+        }
+        .nav-bar li {
+            padding: 0 0em;
+            margin: 0 0.5em;
+        }
+        .container1 {
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+        }
+        .container1 img {
+            width: 80%;
+        }
+        .input-form {
+            flex-direction: column;
+        }
+    }
