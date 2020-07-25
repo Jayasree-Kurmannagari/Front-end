@@ -1,103 +1,264 @@
-    @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
-    * {
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+}
+
+.container {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.container>div {
+    flex: 1;
+}
+
+.first {
+    margin-right: 20px;
+}
+
+.second {
+    margin-left: 20px;
+}
+
+img {
+    max-width: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+h1,
+h3 {
+    font-family: "Raleway", sans-serif;
+}
+
+input {
+    border: 1px solid hsl(238, 22%, 44%);
+    border-radius: 5px;
+    padding: 0.5em 2em;
+    padding-left: 1em;
+}
+
+button {
+    background: hsl(224, 93%, 58%);
+    border: 1px solid hsl(238, 22%, 44%);
+    color: #fff;
+    font-family: "Raleway", sans-serif;
+    padding: 0.5em 2em;
+    border-radius: 5px;
+    font-weight: 700;
+    width: max-content;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.nav-bar {
+    padding: 0;
+    justify-content: flex-end;
+    display: flex;
+}
+
+.nav-bar li {
+    margin-left: 1em;
+}
+
+.nav-bar li a {
+    text-decoration: none;
+    color: hsl(243, 87%, 12%);
+}
+
+.container2 {
+    margin-top: 3em;
+}
+
+.text-container1 h1 {
+    line-height: 1.5em;
+}
+
+.input-form {
+    display: flex;
+}
+
+.input-form button {
+    margin-left: 1em;
+}
+
+.container3 {
+    background-color: #f8f8fe;
+    margin-top: 10em;
+    position: relative;
+}
+
+.container3:before {
+    content: "";
+    position: absolute;
+    background-image: url(./images/bg-curve-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 20%;
+    top: -6em;
+    left: 0;
+}
+
+.container3 a {
+    color: #3da08f;
+}
+
+.card {
+    background-color: #fff;
+    margin-top: 3em;
+    margin-bottom: 5em;
+    padding: 1.5em;
+    width: 60%;
+    height: 50%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #ccc, -5px -5px 5px #ccc;
+}
+
+.card>*,
+.name-details p {
+    margin: 0;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.details img {
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    margin-right: 1em;
+}
+
+.name-details p:first-child {
+    font-weight: 1000;
+}
+
+.container4 {
+    background-color: hsl(238, 22%, 44%);
+    color: #fff;
+    justify-content: space-evenly;
+}
+
+.form {
+    flex-direction: column;
+    display: flex;
+    margin-left: 13em;
+}
+
+.form button {
+    margin-top: 1em;
+}
+
+.form input {
+    width: max-content;
+}
+
+.container5 {
+    background-color: hsl(243, 87%, 12%);
+    padding: 30px;
+    color: #fff;
+}
+
+@media only screen and (max-width:400px) {
+    .card {
+        width: 100%;
+    }
+}
+
+.columns>* {
+    padding: 0;
+}
+
+.columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.columns>* li {
+    padding: 10px;
+}
+
+.column-4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 3em;
+}
+
+.column-4 li {
+    border: 1px solid #fff;
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+    text-align: center;
+    margin: 0.5em;
+    padding: 0.25em 0.5em;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        text-align: center;
+    }
+    .first {
         margin: 0;
-        padding: 0;
-        box-sizing: border-box;
+        margin-top: 3em;
     }
-    
-    body {
-        font-family: 'Open Sans', sans-serif;
-        border: none;
+    .second {
+        margin: 0;
+        margin-bottom: 3em;
     }
-    
-    header {
-        display: flex;
-        justify-content: space-between;
-        margin: 2rem;
-        flex-grow: 1;
+    nav img {
+        width: 30%;
+        height: 50%;
     }
-    
-    header img {
-        width: 10em;
+    .container2,
+    .container3 {
+        flex-direction: column-reverse;
     }
-    
-    .nav-bar {
-        width: 70%;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-    }
-    
-    .nav-bar li {
-        list-style: none;
-        padding: 0 1.5em;
-    }
-    
-    .nav-bar a {
-        color: #000;
-        text-decoration: none;
-    }
-    
-    .container1 {
-        display: flex;
-        margin: 3rem 0em 5rem 0em;
-        border: 1px solid red;
-    }
-    
-    .text-container1 {
-        margin: 2em;
-        display: flex;
+    .container4,
+    .columns {
         flex-direction: column;
     }
-    
-    .text-container1 h2 {
-        font-family: 'Raleway', sans-serif;
-        font-weight: bolder;
-        margin: 3em 0.5em;
-        margin-bottom: 0em;
-        line-height: 1.5em;
-        text-align: center;
-    }
-    
-    .text-container1 p {
-        margin: 0.75em;
-        text-align: center;
-    }
-    
     .input-form {
-        display: flex;
+        flex-wrap: wrap;
+    }
+    .input-form input,
+    .form input {
+        width: 100%;
+    }
+    .input-form button,
+    .form button {
+        width: 100%;
+        margin-left: 0;
         margin-top: 1em;
     }
-    
-    .input-form button {
-        margin: 0 1em;
+    .card {
+        margin: 3em auto;
+        text-align: initial;
     }
-    
-    .container1 img {
-        width: 60%;
+    .text-container3 {
+        margin-top: 0;
     }
-    
-    @media only screen and (max-width:760px) {
-        header img {
-            width: 9em;
-        }
-        header {
-            margin: 2em 0;
-        }
-        .nav-bar li {
-            padding: 0 0em;
-            margin: 0 0.5em;
-        }
-        .container1 {
-            flex-direction: column-reverse;
-            justify-content: center;
-            align-items: center;
-        }
-        .container1 img {
-            width: 80%;
-        }
-        .input-form {
-            flex-direction: column;
-        }
+    .column-4 {
+        margin-bottom: 2em;
+        margin-right: 0;
     }
+}
