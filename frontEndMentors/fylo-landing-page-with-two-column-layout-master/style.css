@@ -233,6 +233,12 @@ nav {
     .container3 {
         flex-direction: column-reverse;
     }
+    .container3::before {
+        background-image: url('./images/bg-curve-mobile.svg');
+        background-position: center;
+        background-size: contain;
+        top: -8em;
+    }
     .container4,
     .columns {
         flex-direction: column;
