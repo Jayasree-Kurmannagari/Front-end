@@ -37,7 +37,6 @@ async function getPhotos() {
     try {
         const response = await fetch(APIaddr);
         allPhotos = await response.json();
-        console.log('sdfwef');
         displayPhotos();
     } catch (error) {
         // Error message
