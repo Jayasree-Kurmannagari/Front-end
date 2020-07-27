@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Musicon</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <script src="handlebars.min.js"></script>
+    <script id="templateHB" type="text/x-handlebars-template">
+        {{#each instruments}}
+        <article class="instrument">
+            <img class="image" src='{{this.image}}' alt='{{this.name}}'>
+            <section class="details">
+                <h2 class="name">{{this.name}}</h2>
+                <p class="description">{{this.description}}</p>
+                {{#if this.sale}}
+
+                <p class="price"><del>{{this.price}}</del></p>
+                <p class="sale">{{this.sale}}</p>
+                {{else}}
+                <p class="price">{{this.price}}</p>
+                {{/if}}
+            </section>
+        </article>
+        {{/each}}
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1 class="branding">Musicon</h1>
+    </header>
+
+    <article id="showcase">
+        <section class="container" id="information">
+        </section>
+    </article>
+    <footer>
+        <p>&copy; Musicon 2018</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js"></script>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

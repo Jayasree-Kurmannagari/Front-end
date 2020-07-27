@@ -1,0 +1,107 @@
+* {
+    color: #ffffff;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    background: url("https://s3.amazonaws.com/codecademy-content/courses/learn-handlebars/musicon/musicon_bg.png") no-repeat center center fixed;
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+    position: static;
+}
+
+header {
+    padding-top: 3%;
+    min-height: 70px;
+}
+
+header h1 {
+    margin: 0 2em;
+}
+
+#showcase {
+    margin-top: 5%;
+    margin-bottom: 15%;
+}
+
+.instrument {
+    width: 80%;
+    display: flex;
+    overflow: auto;
+    opacity: 0.9;
+    background-color: #fff;
+    padding: 2% 0;
+    margin: 5% auto;
+    border-radius: 10px;
+}
+
+.image {
+    display: inline-block;
+    margin: 0 1em;
+    border-radius: 10px;
+    max-width: 250px;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: -1% auto;
+    padding: 2%;
+}
+
+.name,
+.description,
+.price,
+del {
+    color: #000000;
+    text-align: left;
+}
+
+.description,
+.price {
+    margin-top: 0;
+}
+
+.description {
+    height: max-content;
+    font-size: 1.2em;
+    overflow: auto;
+}
+
+.price {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.sale {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #fa4359;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+}
+
+@media only screen and (max-width:400px) {
+    .instrument {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .image {
+        width: 100%;
+    }
+    .details {
+        align-items: center;
+    }
+}
