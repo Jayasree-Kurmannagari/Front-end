@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+}
+
+header {
+    display: flex;
+    height: 100vh;
+}
+
+.container {}
+
+.image-container {
+    background: url('./images/hero-desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
