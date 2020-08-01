@@ -1,24 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap');
 * {
     box-sizing: border-box;
-    /* border: 1px solid red; */
     margin: 0;
     padding: 0;
 }
 
 body {
-    background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%))
 }
 
-header {
+.container {
     display: flex;
-    height: 100vh;
+    min-height: 100vh;
 }
 
-.container {}
+.text-container {
+    width: 60%;
+    padding: 5em 10% 0 10%;
+    font-family: 'Josefin Sans', sans-serif;
+    background-image: url(./images/bg-pattern-desktop.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo {
+    margin-bottom: 5em;
+}
+
+h1 {
+    text-transform: uppercase;
+    width: 7em;
+    letter-spacing: 0.3em;
+    margin-bottom: 1em;
+    font-size: 2.5em;
+}
+
+h1 span {
+    color: hsl(0, 36%, 70%);
+    font-weight: 300;
+}
+
+p {
+    color: hsl(0, 36%, 70%);
+    line-height: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.input-form {
+    position: relative;
+}
+
+input {
+    padding: 1em;
+    border-radius: 50px;
+    width: 100%;
+    border: 1px solid hsl(0, 80%, 86%);
+    position: relative;
+    outline: none;
+}
+
+button {
+    position: absolute;
+    top: 1.5px;
+    right: 0.3px;
+    padding: 0.8em 2em;
+    border-radius: 50px;
+    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    border: none;
+    cursor: pointer;
+    box-shadow: 1px 1px 20px hsl(0, 74%, 74%);
+}
+
+.error {
+    position: absolute;
+    top: 0.75em;
+    right: 5em;
+    display: none;
+}
+
+.input-form p {
+    color: hsl(0, 93%, 68%);
+    margin-top: 0.75em;
+    margin-left: 1em;
+    display: none;
+}
 
 .image-container {
     background: url('./images/hero-desktop.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    width: 50%;
+    width: 40%;
 }
