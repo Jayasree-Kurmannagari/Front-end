@@ -1,9 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Source+Sans+Pro:ital,wght@1,700&family=Volkhov:wght@700&display=swap");
 body {
     display: flex;
     justify-content: center;
-    align-items: center;
     height: 100vh;
     margin: 0;
+}
+
+div::after,
+div:before {
+    position: absolute;
+    content: "";
 }
 
 body>*,
@@ -11,15 +17,59 @@ body>*,
     position: absolute;
 }
 
-img {
-    opacity: 0.4;
+header>* {
+    margin: 0;
+}
+
+header {
+    margin-top: 12vmin;
+    width: 50vmin;
+    height: 20vmin;
+}
+
+header:before {
+    width: 100%;
+    height: 100%;
+    transform: skew(-15deg);
+    border-radius: 3vmin 3vmin 3vmin 0vmin;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: linear-gradient(to bottom, red, black);
+}
+
+h1,
+h2 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Volkhov', serif;
+    font-size: 9vmin;
+    font-style: italic;
+    color: #fff;
+    margin-bottom: -3vmin;
+}
+
+h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: yellow;
+}
+
+p {
+    font-family: 'Balsamiq Sans', cursive;
+    text-transform: capitalize;
+    text-align: center;
+    color: #fff;
 }
 
 .container {
-    /* border: 1px solid #000; */
     width: 50vmin;
     height: 50vmin;
     border-radius: 50%;
+    top: 40%;
+    position: relative;
 }
 
 .face {
@@ -35,8 +85,6 @@ img {
 }
 
 .face:before {
-    content: "";
-    position: absolute;
     width: 7vmin;
     height: 20vmin;
     background: red;
@@ -58,20 +106,16 @@ img {
 }
 
 .main-face:before {
-    content: "";
-    position: absolute;
     width: 16vmin;
     height: 3vmin;
-    border-radius: 300%/50%;
+    border-radius: 300px/50px;
     top: -2.5vmin;
     left: -0.5vmin;
     border-bottom: 0.65vmin solid #000;
-    background: red;
+    background-color: red;
 }
 
 .main-face:after {
-    content: "";
-    position: absolute;
     width: 100%;
     height: 20%;
     top: 0.4vmin;
@@ -91,9 +135,14 @@ img {
     background-color: #f5f5f5;
 }
 
+.eye2 {
+    right: 0;
+    transform: rotate(-10deg);
+    border-bottom: none;
+}
+
 .eye1:before,
 .eye2:before {
-    position: absolute;
     width: 2vmin;
     height: 0.75vmin;
     border: 0.45vmin solid #000;
@@ -101,13 +150,7 @@ img {
     content: "";
     top: -0.2vmin;
     left: 2.5vmin;
-    background: radial-gradient(#ccc 50%, #000 50%)
-}
-
-.eye2 {
-    right: 0;
-    transform: rotate(-10deg);
-    border-bottom: none;
+    background: radial-gradient(#ccc 50%, #000 50%);
 }
 
 .eye2:before {
@@ -115,8 +158,6 @@ img {
 }
 
 .eye2:after {
-    position: absolute;
-    content: "";
     width: 4vmin;
     height: 1vmin;
     border-top: 0.45vmin solid #000;
@@ -138,63 +179,59 @@ img {
     border-radius: 50%;
 }
 
-.collar-l1 {
+.collar {
     width: 3vmin;
     height: 8vmin;
     border: none;
     border-top: 0.65vmin solid #000;
-    border-left: 0.65vmin solid #000;
     top: 20vmin;
+}
+
+.collar-left {
     left: 10.5vmin;
     transform: rotate(5deg);
     border-radius: 200% 0 0 0;
-}
-
-.collar-l2 {
-    width: 7.5vmin;
-    height: 3vmin;
-    border-top: 0.65vmin solid #000;
-    top: 27vmin;
-    left: 10vmin;
-    transform: rotate(-5deg);
-    border-radius: 20vmin/10vmin;
-}
-
-.collar-l3 {
-    height: 2.25vmin;
     border-left: 0.65vmin solid #000;
-    top: 26vmin;
-    left: 17.5vmin;
-    transform: rotate(35deg);
 }
 
-.collar-r1 {
-    width: 3vmin;
-    height: 8vmin;
-    border: none;
-    border-right: 0.65vmin solid #000;
-    border-top: 0.65vmin solid #000;
-    top: 19.9vmin;
+.collar-right {
     right: 10.5vmin;
     transform: rotate(-5deg);
     border-radius: 0% 200% 0% 0%;
+    border-right: 0.65vmin solid #000;
 }
 
-.collar-r2 {
+.collar:before {
     width: 7.5vmin;
     height: 3vmin;
     border-top: 0.65vmin solid #000;
-    top: 27vmin;
-    right: 10vmin;
-    transform: rotate(5deg);
+    top: 6.25vmin;
     border-radius: 20vmin/10vmin;
 }
 
-.collar-r3 {
+.collar-left::before {
+    left: -0.5vmin;
+    transform: rotate(-10deg);
+}
+
+.collar-right:before {
+    right: -0.5vmin;
+    transform: rotate(10deg);
+}
+
+.collar:after {
     height: 2.25vmin;
     border-left: 0.65vmin solid #000;
-    top: 26vmin;
-    right: 17.5vmin;
+    top: 5vmin;
+}
+
+.collar-left:after {
+    left: 6.5vmin;
+    transform: rotate(35deg);
+}
+
+.collar-right:after {
+    right: 6.5vmin;
     transform: rotate(-35deg);
 }
 
@@ -209,67 +246,57 @@ img {
     z-index: 1;
 }
 
-.collar-il1 {
+.collar-inside {
     height: 2vmin;
     border-left: 0.65vmin solid #000;
     top: 27vmin;
-    left: 18.5vmin;
-    transform: rotate(35deg);
     z-index: 100;
 }
 
-.collar-il1:before {
-    content: "";
-    position: absolute;
+.collar-il1 {
+    left: 18.5vmin;
+    transform: rotate(35deg);
+}
+
+.collar-ir1 {
+    right: 18.5vmin;
+    transform: rotate(-35deg);
+}
+
+.collar-inside:before {
     width: 5vmin;
     height: 3vmin;
     border-top: 0.65vmin solid #000;
+    border-radius: 100px/50px;
+}
+
+.collar-il1:before {
     top: 0.5vmin;
     left: 0vmin;
     transform: rotate(-12deg);
-    border-radius: 100px/50px;
 }
 
 .collar-ir1:before {
-    position: absolute;
-    content: "";
-    width: 5vmin;
-    height: 3vmin;
-    border-top: 0.65vmin solid #000;
     top: 0.8vmin;
     right: 0;
     transform: rotate(5deg);
-    border-radius: 100px/50px;
+}
+
+.collar-inside:after {
+    height: 3vmin;
+    width: 2vmin;
+    border-left: 0.65vmin solid black;
 }
 
 .collar-il1:after {
-    position: absolute;
-    content: "";
-    height: 3vmin;
-    width: 2vmin;
-    left: 4.75vmin;
-    border-left: 0.65vmin solid black;
+    left: 4vmin;
     transform: rotate(-70deg);
     top: -3.5vmin;
     background-color: #ffcd6a;
 }
 
-.collar-ir1 {
-    height: 2vmin;
-    border-left: 0.65vmin solid #000;
-    top: 27vmin;
-    right: 18.5vmin;
-    transform: rotate(-35deg);
-    z-index: 100;
-}
-
 .collar-ir1:after {
-    position: absolute;
-    content: "";
-    height: 3vmin;
-    width: 2vmin;
     right: 3.9vmin;
-    border-left: 0.65vmin solid black;
     transform: rotate(70deg);
     top: -1.3vmin;
     background-color: #fff;
@@ -420,7 +447,7 @@ img {
     top: 12.5vmin;
     left: 12vmin;
     transform: rotate(-40deg);
-    background: linear-gradient(to right, red 40%, #fff 40%)
+    background: linear-gradient(to right, red 40%, #fff 40%);
 }
 
 .hands-r {
@@ -567,7 +594,7 @@ img {
     top: 12.5vmin;
     right: 12vmin;
     transform: rotate(40deg);
-    background: linear-gradient(to right, red 40%, #fff 40%)
+    background: linear-gradient(to right, red 40%, #fff 40%);
 }
 
 .leg-l {
@@ -612,7 +639,7 @@ img {
 .shoe-l {
     width: 5vmin;
     height: 2vmin;
-    border: 3px solid #000;
+    border: 0.65vmin solid #000;
     bottom: 3.5vmin;
     left: 16.5vmin;
     border-radius: 0px 40px 0 0;
