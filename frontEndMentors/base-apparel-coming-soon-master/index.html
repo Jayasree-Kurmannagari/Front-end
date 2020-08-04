@@ -16,24 +16,30 @@
 
 </head>
 
-<body>
+<body id="body">
     <div class="container">
         <div class="text-container">
             <img src="./images/logo.svg" alt="logo" class="logo">
-            <h1><span>We're</span> coming soon</h1>
-            <p>Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
-            <div class="input-form">
-                <input required placeholder="Email Address">
-                <img src="./images/icon-error.svg" alt="error" class="error">
-                <button>
+            <div class="inner-container">
+                <img src="./images/hero-mobile.jpg" alt="hero-image" class="mobile-img">
+                <h1><span>We're</span> coming soon</h1>
+                <p>Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
+                <form class="input-form" id="input-form">
+                    <input id="email" type="email" placeholder="Email address">
+                    <img src="./images/icon-error.svg" alt="error" class="error" id="errorIcon">
+                    <button>
                     <img src="./images/icon-arrow.svg" alt="arrow">
                 </button>
-                <p>Please provide a valid email</p>
+                    <p id="errorMsg">Please provide a valid email</p>
+                </form>
             </div>
         </div>
         <div class="image-container">
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.2.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+
 </body>
 
 </html>

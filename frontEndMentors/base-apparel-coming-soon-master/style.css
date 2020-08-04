@@ -16,7 +16,6 @@ body {
 
 .text-container {
     width: 60%;
-    padding: 5em 10% 0 10%;
     font-family: 'Josefin Sans', sans-serif;
     background-image: url(./images/bg-pattern-desktop.svg);
     background-position: center;
@@ -24,11 +23,27 @@ body {
     background-size: cover;
 }
 
+.inner-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 60%;
+}
+
 .logo {
+    margin: 5em 10% 0 10%;
     margin-bottom: 5em;
 }
 
+.mobile-img {
+    width: 100%;
+    margin-top: -2em;
+    margin-bottom: 4em;
+    display: none;
+}
+
 h1 {
+    margin: 0 10%;
     text-transform: uppercase;
     width: 7em;
     letter-spacing: 0.3em;
@@ -42,12 +57,14 @@ h1 span {
 }
 
 p {
+    margin: 0 10%;
     color: hsl(0, 36%, 70%);
     line-height: 1.5em;
     margin-bottom: 1.5em;
 }
 
 .input-form {
+    margin: 0 10%;
     position: relative;
 }
 
@@ -62,14 +79,25 @@ input {
 
 button {
     position: absolute;
-    top: 1.5px;
+    top: 1px;
     right: 0.3px;
     padding: 0.8em 2em;
     border-radius: 50px;
     background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
     border: none;
     cursor: pointer;
-    box-shadow: 1px 1px 20px hsl(0, 74%, 74%);
+}
+
+button:hover {
+    box-shadow: 0px 0px 5px hsl(0, 74%, 74%);
+}
+
+input:focus {
+    border: 1px solid hsl(0, 74%, 74%);
+}
+
+button:active {
+    transform: scale(0.95);
 }
 
 .error {
@@ -79,7 +107,7 @@ button {
     display: none;
 }
 
-.input-form p {
+#errorMsg {
     color: hsl(0, 93%, 68%);
     margin-top: 0.75em;
     margin-left: 1em;
@@ -91,4 +119,44 @@ button {
     background-repeat: no-repeat;
     background-size: cover;
     width: 40%;
+}
+
+.body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+    font-size: 30px;
+    color: hsl(0, 36%, 70%);
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width:600px) {
+    .logo {
+        margin: 2em 5% 4em 5%;
+    }
+    .inner-container {
+        height: auto;
+    }
+    .image-container {
+        display: none;
+    }
+    .mobile-img {
+        display: block;
+    }
+    .text-container {
+        width: 100%;
+    }
+    h1,
+    p {
+        text-align: center;
+    }
+    h1 {
+        margin: 0 auto;
+        margin-bottom: 1em;
+    }
+    input {
+        margin-bottom: 5em;
+    }
 }
