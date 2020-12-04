@@ -101,6 +101,9 @@ input::placeholder{
     flex:1;
     padding:0 10px;
 }
+.fa-trash{
+    pointer-events: none;
+}
 .trash-btn,.complete-btn{
     border:none;
     background-color: #fff;
@@ -109,6 +112,7 @@ input::placeholder{
     padding:0.25em 0.25em 0 0;
     color:rgb(105, 105, 105);
     outline:none;
+    
 }
 .trash-btn:hover,.complete-btn:hover{
     color:black;
@@ -136,6 +140,10 @@ input::placeholder{
 }
 .check-img{
     padding:1px 0 7px 3px;
+}
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
 }
 @media only screen and (max-width:500px){
     .header{
