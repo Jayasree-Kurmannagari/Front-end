@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.header{
+    height:40vh;
+    background-position: center;
+    background-size: cover;
+    max-height:300px;
+}
+.light-mode{
+    background-image: url("./images/bg-desktop-light.jpg");   
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0 20px 0;
+}
+.heading{
+    display: flex;
+    justify-content:space-between;
+    padding: 50px 0 25px 0;
+    width:25em;
+}
+.heading p{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2em;
+    letter-spacing: 0.25em;
+    padding:10px 0px 0 0;
+    color:#fff;
+}
+.mode{
+    padding:10px 0;
+    cursor: pointer;
+} 
+form{
+    display: flex;
+    align-items:center;
+    position: relative;
+}
+.create{
+    
+    font-family: 'Josefin Sans', sans-serif;
+    padding:1.1em 0 0.9em 0.5em;
+    font-size: 1.25em;
+    width:20em;
+    height:1.9em;
+    border-radius:5px;
+    border:1px solid rgb(196, 195, 195);
+    outline-color: #fff;
+    line-height: 1.9em;
+    vertical-align: middle;
+}
+.fa-plus{
+    position: absolute;
+    z-index:100;
+    font-size: 1.25em;
+    padding:0.5em 0.75em;
+    color:rgb(190, 190, 190);
+    cursor: pointer;
+    right:0;
+}
+.fa-plus:hover{
+    color:black;
+}
+
+input::placeholder{
+    color:rgb(190, 190, 190);
+}
+
+.todo-container{
+    display: flex;
+    justify-content: center;
+}
+.todo-list{
+    list-style: none;
+    min-width:30%;
+    width:20em;
+    font-size: 1.25em;
+   
+}
+.todo:first-child{
+    border-radius: 5px 5px  0 0;
+    border:0.5px solid rgb(190, 190, 190);
+}
+.todo{
+    display:flex ;
+    padding:10px;
+    background-color:#fff;
+    border-bottom-style: dashed;
+    align-items: center;
+    justify-content: center;
+    border: 0.5px solid rgb(190, 190, 190);
+    border-top: none;
+    position: relative;
+}
+.todo li{
+    flex:1;
+    padding:0 10px;
+}
+.trash-btn,.complete-btn{
+    border:none;
+    background-color: #fff;
+    cursor: pointer;
+    font-size: 0.9em;
+    padding:0.25em 0.25em 0 0;
+    color:rgb(105, 105, 105);
+    outline:none;
+}
+.trash-btn:hover,.complete-btn:hover{
+    color:black;
+}
+
+.hide{
+    background:linear-gradient( hsl(192, 100%, 67%) , hsl(280, 87%, 65%));
+    width:18px;
+   height:18px;
+   border-radius: 50%;
+   text-align: center;
+   margin-right:0.25em;
+}
+.check-btn{
+   position:absolute;
+   left:0;
+   border-radius: 50%;
+   width:20px;
+   height:20px;
+   background:linear-gradient( hsl(192, 100%, 67%) , hsl(280, 87%, 65%));
+   text-align: center;
+   margin:10px;
+   outline: none;
+   cursor: pointer;
+}
+.check-img{
+    padding:1px 0 7px 3px;
+}
+@media only screen and (max-width:500px){
+    .header{
+        height: 30vh;
+    }
+    .light-mode{
+        background-image: url('./images/bg-mobile-light.jpg');
+    }
+    .heading{
+        width:19em;
+    }
+    .todo-list,.create{
+        width:15em;
+    }
+    
+}
