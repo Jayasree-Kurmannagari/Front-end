@@ -74,13 +74,17 @@ input::placeholder{
 .todo-container{
     display: flex;
     justify-content: center;
+    margin-top:-3em;
+    min-height: 30%;
+    max-height:17em;
+    height:17em;
 }
 .todo-list{
     list-style: none;
     min-width:30%;
     width:20em;
     font-size: 1.25em;
-   
+   overflow-y:auto;
 }
 .todo:first-child{
     border-radius: 5px 5px  0 0;
@@ -100,6 +104,7 @@ input::placeholder{
 .todo li{
     flex:1;
     padding:0 10px;
+    font-family: 'Josefin Sans', sans-serif;
 }
 .fa-trash{
     pointer-events: none;
@@ -143,7 +148,42 @@ input::placeholder{
 }
 .completed{
     text-decoration: line-through;
-    opacity: 0.5;
+    color:rgb(185, 183, 183);
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.group{
+    display: flex;
+}
+.group li{
+    padding:5px;
+}
+.footer ul{
+    list-style: none;
+    display: flex;
+    min-width: 30%;
+    width:20em;
+    background: #fff;
+    padding: 5px;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.25em;
+    border:0.5px solid gray;
+    border-radius: 0 0 5px 5px;
+}
+.footer ul li{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size:0.65em;
+    cursor: pointer;
+}
+.count{
+    pointer-events: none;
+}
+.active{
+    color: hsl(220, 98%, 61%);
 }
 @media only screen and (max-width:500px){
     .header{
