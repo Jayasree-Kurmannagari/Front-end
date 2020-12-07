@@ -4,6 +4,9 @@
     padding:0;
     box-sizing: border-box;
 }
+.dark{
+    background-color: hsl(235, 21%, 11%);
+}
 .header{
     height:40vh;
     background-position: center;
@@ -12,6 +15,9 @@
 }
 .light-mode{
     background-image: url("./images/bg-desktop-light.jpg");   
+}
+.dark-mode{
+    background-image: url("./images/bg-desktop-dark.jpg");
 }
 .main{
     display: flex;
@@ -42,7 +48,6 @@ form{
     position: relative;
 }
 .create{
-    
     font-family: 'Josefin Sans', sans-serif;
     padding:1.1em 0 0.9em 0.5em;
     font-size: 1.25em;
@@ -53,6 +58,18 @@ form{
     outline-color: #fff;
     line-height: 1.9em;
     vertical-align: middle;
+}
+.create:focus{
+    outline:#ccc;
+}
+.dark-form{
+    background-color:hsl(237, 14%, 26%);
+    border:1px solid hsl(233, 14%, 35%);
+    outline-color:hsl(237, 14%, 26%);
+    color:#f5f5f5;
+}
+.dark-form:focus{
+    outline:hsl(237, 14%, 26%);
 }
 .fa-plus{
     position: absolute;
@@ -90,6 +107,7 @@ input::placeholder{
     border-radius: 5px 5px  0 0;
     border:0.5px solid rgb(190, 190, 190);
 }
+
 .todo{
     display:flex ;
     padding:10px;
@@ -100,6 +118,14 @@ input::placeholder{
     border: 0.5px solid rgb(190, 190, 190);
     border-top: none;
     position: relative;
+}
+.dark-todo:first-child{
+    border:0.5px solid hsl(235, 21%, 11%);
+}
+.dark-todo{
+    background-color: hsl(237, 14%, 26%);
+    border:0.5px solid hsl(235, 21%, 11%);
+    color:#f5f5f5;
 }
 .todo li{
     flex:1;
@@ -117,12 +143,17 @@ input::placeholder{
     padding:0.25em 0.25em 0 0;
     color:rgb(105, 105, 105);
     outline:none;
-    
+}
+.dark-button{
+    background-color: hsl(237, 14%, 26%);
+    color:#ccc;
 }
 .trash-btn:hover,.complete-btn:hover{
     color:black;
 }
-
+.dark-button:hover{
+    color:#f5f5f5;
+}
 .hide{
     background:linear-gradient( hsl(192, 100%, 67%) , hsl(280, 87%, 65%));
     width:18px;
@@ -161,7 +192,7 @@ input::placeholder{
 .group li{
     padding:5px;
 }
-.footer ul{
+.footer-list{
     list-style: none;
     display: flex;
     min-width: 30%;
@@ -185,6 +216,14 @@ input::placeholder{
 .active{
     color: hsl(220, 98%, 61%);
 }
+.dark-footer{
+    background: hsl(237, 14%, 26%);
+    border: hsl(235, 21%, 11%);
+    color:#f5f5f5;
+}
+/* .draggable.dragging{
+    opacity: 0.5;
+} */
 @media only screen and (max-width:500px){
     .header{
         height: 30vh;
@@ -192,11 +231,22 @@ input::placeholder{
     .light-mode{
         background-image: url('./images/bg-mobile-light.jpg');
     }
+    .dark-mode{
+        background-image: url('./images/bg-mobile-dark.jpg');
+    }
     .heading{
         width:19em;
     }
     .todo-list,.create{
         width:15em;
     }
-    
+    .todo-container{
+        margin-top:-0.5em;
+    }
+    .footer-list{
+        width:15em;
+    }
+    .group{
+        padding: 0 1em;
+    }
 }
