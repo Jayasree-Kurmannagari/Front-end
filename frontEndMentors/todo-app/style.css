@@ -221,9 +221,7 @@ input::placeholder{
     border: hsl(235, 21%, 11%);
     color:#f5f5f5;
 }
-/* .draggable.dragging{
-    opacity: 0.5;
-} */
+
 @media only screen and (max-width:500px){
     .header{
         height: 30vh;
